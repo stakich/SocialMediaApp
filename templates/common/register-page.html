@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2 class="form-title">Create an Account</h2>
+    
+            <form action="" method="POST">
+                {% csrf_token %}
+    
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    {{ form.username }}
+                    <p class="error-message">{% if form.username.errors %}{{ form.username.errors }}{% endif %}</p>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    {{ form.email }}
+                    <p class="error-message">{% if form.email.errors %}{{ form.email.errors }}{% endif %}</p>
+                </div>
+    
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    {{ form.password }}
+                    <p class="error-message">{% if form.password.errors %}{{ form.password.errors }}{% endif %}</p>
+                </div>
+    
+                <button type="submit" class="form-button">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

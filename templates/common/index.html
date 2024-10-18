@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petstagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">Petstagram</div>
+            <nav class="space-x-4">
+                <a href="{% url 'home' %}" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Add Photo</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Profile</a>
+                <a href="#" class="text-gray-600 hover:text-gray-800">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="flex flex-1 max-w-5xl mx-auto mt-6">
+        <aside class="hidden md:block w-1/4 bg-white p-4 rounded-lg shadow-md mr-4">
+            <h2 class="text-lg font-semibold mb-2">Trending Pets</h2>
+            <ul class="space-y-2">
+                <li class="text-gray-700">Fluffy 🐱</li>
+                <li class="text-gray-700">Rover 🐶</li>
+                <li class="text-gray-700">Goldie 🐠</li>
+                <li class="text-gray-700">Shadow 🦇</li>
+                <li class="text-gray-700">Buddy 🐾</li>
+            </ul>
+        </aside>
+
+        <main class="flex-1">
+            <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center">
+                        <img src="profile-pic.png" alt="User Profile" class="w-10 h-10 rounded-full mr-2">
+                        <div>
+                            <span class="font-semibold">Diyan Kalaydzhiev</span>
+                            <span class="text-gray-500 text-sm">Belozem</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="text-gray-600 hover:text-gray-800">✏️</button>
+                        <button class="text-gray-600 hover:text-gray-800">🗑️</button>
+                    </div>
+                </div>
+                <img src="post-image.png" alt="Post Image" class="w-full h-auto rounded-lg mb-2">
+                <div class="flex justify-between mb-2">
+                    <span class="font-bold">1 like</span>
+                    <span class="text-gray-500 text-sm">SEPT. 26, 2024</span>
+                </div>
+                <p class="text-gray-700">Tuka ima mn qko kuche</p>
+            </div>
+
+            <!-- Repeat the post block for more posts -->
+            <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+                <div class="flex justify-between items-center mb-2">
+                    <div class="flex items-center">
+                        <img src="profile-pic.png" alt="User Profile" class="w-10 h-10 rounded-full mr-2">
+                        <div>
+                            <span class="font-semibold">Jane Doe</span>
+                            <span class="text-gray-500 text-sm">New York</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="text-gray-600 hover:text-gray-800">✏️</button>
+                        <button class="text-gray-600 hover:text-gray-800">🗑️</button>
+                    </div>
+                </div>
+                <img src="post-image-2.png" alt="Post Image" class="w-full h-auto rounded-lg mb-2">
+                <div class="flex justify-between mb-2">
+                    <span class="font-bold">5 likes</span>
+                    <span class="text-gray-500 text-sm">SEPT. 25, 2024</span>
+                </div>
+                <p class="text-gray-700">My lovely dog!</p>
+            </div>
+        </main>
+    </div>
+
+    <footer class="bg-white shadow-md mt-6">
+        <div class="max-w-5xl mx-auto px-4 py-4 text-center text-gray-600">
+            &copy; 2024 Petstagram. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

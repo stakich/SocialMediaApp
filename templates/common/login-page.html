@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Petstagram</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"> <!-- Link your CSS file -->
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white rounded-lg shadow-lg p-8 w-96">
+        <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Welcome Back!</h2>
+
+        <form action="#" method="POST">
+            {% csrf_token %} <!-- Include CSRF token for security -->
+            <div class="form-group mb-4">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <p class="error-message">{% if form.username.errors %}{{ form.username.errors }}{% endif %}</p>
+            </div>
+
+            <div class="form-group mb-4">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <p class="error-message">{% if form.password.errors %}{{ form.password.errors }}{% endif %}</p>
+            </div>
+
+            <button type="submit" class="form-button w-full">Log In</button>
+        </form>
+
+        <div class="form-footer text-center mt-4">
+            Don't have an account? <a href="{% url 'register' %}" class="text-blue-600 hover:underline">Sign up</a>
+        </div>
+    </div>
+
+</body>
+</html>

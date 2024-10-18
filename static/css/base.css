@@ -1,0 +1,136 @@
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    margin: 0;*/
+/*    background-color: #f9f9f9;*/
+/*}*/
+
+/*header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    background-color: #fff;*/
+/*    padding: 10px 20px;*/
+/*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*.logo {*/
+/*    font-size: 24px;*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*nav a {*/
+/*    margin-left: 20px;*/
+/*    text-decoration: none;*/
+/*    color: #333;*/
+/*}*/
+
+/*.container {*/
+/*    display: flex;*/
+/*    max-width: 1000px;*/
+/*    margin: 20px auto;*/
+/*}*/
+
+/*.sidebar {*/
+/*    width: 250px;*/
+/*    background-color: #fff;*/
+/*    border-radius: 8px;*/
+/*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+/*    padding: 15px;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+/*.sidebar h2 {*/
+/*    margin-top: 0;*/
+/*}*/
+
+/*.sidebar ul {*/
+/*    list-style: none;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.sidebar li {*/
+/*    margin: 10px 0;*/
+/*}*/
+
+/*main {*/
+/*    flex: 1; !* Allow main to take up the remaining space *!*/
+/*}*/
+
+/*.post {*/
+/*    background-color: #fff;*/
+/*    margin-bottom: 20px;*/
+/*    padding: 15px;*/
+/*    border-radius: 8px;*/
+/*    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+/*}*/
+
+/*.post-header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.user-info {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.profile-pic {*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    border-radius: 50%;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*.user-details {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.username {*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.tag {*/
+/*    margin-left: 10px;*/
+/*    color: #555;*/
+/*}*/
+
+/*.post-options {*/
+/*    display: flex;*/
+/*}*/
+
+/*.edit, .delete {*/
+/*    background: none;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    font-size: 18px;*/
+/*    margin-left: 10px;*/
+/*}*/
+
+/*.post-image {*/
+/*    width: 100%;*/
+/*    border-radius: 8px;*/
+/*    margin: 10px 0;*/
+/*}*/
+
+/*.post-content {*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*.like-info {*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*.likes-count {*/
+/*    font-weight: bold;*/
+/*}*/
+
+/*.post-description {*/
+/*    margin: 5px 0;*/
+/*}*/
+
+/*.post-date {*/
+/*    color: #888;*/
+/*    font-size: 12px;*/
+/*}*/
